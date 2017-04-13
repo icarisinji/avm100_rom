@@ -16,6 +16,8 @@
 #define OFFSET_UP_MAIN			0x240000
 #define SIZE_UP_MAIN			0x200000
 
+#define OFFSET_MA_CONFIG_VERSION 0x880020 /* 바이너리 파일에서 직접 수정해서 적용 하였는데, 나중에는 이 옵셋사용해서 할수 있게 해야될듯*/
+
 static int _load_file(char *_pPath, unsigned char **_ppBuf, long *_pReadsize)
 {
 	FILE *pF = NULL;
